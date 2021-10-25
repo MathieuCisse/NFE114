@@ -1,7 +1,6 @@
 function handleSubmitForm() {
-    event.preventDefault();
 
-    if( !(document.getElementById('password').value == document.getElementById('confirm-password').value) ) {
+    if( $('#password').val() !== $('#confirm-password').val() ) {
         alert("Erreur au niveau de la confirmation de mot de passe !");
     }
     else {
